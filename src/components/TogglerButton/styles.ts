@@ -1,85 +1,22 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 95vw;
-    height: 3.5rem;
-  }
-
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-
-  .slider {
-    //position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: ${({ theme }) => theme.background};
-    color: ${({ theme }) => theme.text};
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    box-shadow: 0 0 2px ${({ theme }) => theme.text};
-    margin-bottom: 20px; 
-  }
-
-  .slider:before {
-    //position: absolute;
-    content: '';
-    height: 14px;
-    width: 14px;
-    left: 7px;
-    bottom: 5px;
-    background-color: ${({ theme }) => theme.background};
-    color: ${({ theme }) => theme.text};
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    
-  }
-
-  input:checked + .slider {
-    background-color: ${({ theme }) => theme.background};
-  }
-
-  input:checked + .slider:before {
-    -webkit-transform: translateX(35px);
-    -ms-transform: translateX(35px);
-    transform: translateX(35px);
-  }
-
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-    
-  }
-
-  .slider.round:before {
-    border-radius: 50%;
-  }
 
 
-  h5 {
-    font-size: 1.375rem;
-    color: ${({theme}) => theme.text};
-    text-align: center;
-  }
-`;
-
-export const Icons = styled.span`
-  width: 100%;
+export const CenteredButtonContainer = styled.div`
+  
   display: flex;
-  justify-content: space-between;
-  top: 25%;
-  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 20px auto;
 
-  svg {
+  button {
+    padding: 10px 20px;
+    background-color: ${({ theme }) => theme.secondary};
     color: ${({ theme }) => theme.text};
-    z-index: 11;
+    border: 2px solid ${({ theme }) => theme.themeName === 'dark' ? 'transparent' : 'black'};
+    border-radius: ${({ theme }) => theme.themeName === 'dark' ? '50px' : '5px'};
+    cursor: pointer;
+    width: 90vw;
+    font-size: 32px;
   }
 `;
