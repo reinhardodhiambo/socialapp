@@ -8,14 +8,14 @@ type GlobalThemeProps = {
 const globalStyle = createGlobalStyle`
   :root {
     //dark-mode
-    --dark-background: #1A1B27;
-    --dark-text: #F5F5F7;
+    --dark-background: #010310;
+    --dark-text: #ffffff;
     --dark-secondary: #1aca1a;
 
     //light-mode
-    --light-background: #f2f2f2;
+    --light-background: #ffffff;
     --light-text: #2E0509;
-    --light-secondary: #f2f2f2;
+    --light-secondary: #ffffff;
 
   }
 

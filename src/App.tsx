@@ -27,10 +27,10 @@ function App() {
                 <Gallery/>
                 <UpgradeContainer>
                     <UpgradeButton>
-                        linkin.bio/yourpage
+                        <div>linkin.bio/<span>yourpage</span></div>
                     </UpgradeButton>
                     <UpgradeText>
-                        Upgrade to remove
+                        <strong>Upgrade to remove</strong>
                     </UpgradeText>
                 </UpgradeContainer>
             </ThemeProvider>

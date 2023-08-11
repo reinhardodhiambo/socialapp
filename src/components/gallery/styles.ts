@@ -16,5 +16,7 @@ export const GalleryItem = styled.div`
 export const GalleryImage = styled.img`
   width: 100%;
   height: auto;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 `;
 
